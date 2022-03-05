@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vadodara Municipal Corporation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/vmc-logo-1.jpg" type="image/icon type">
+
+    <!-- FONT CSS-->
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-awesome/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="assets/font/font-icon/font-flaticon/flaticon.css">
+    <!-- LIBRARY CSS-->
+    <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/animate/animate.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/slick-slider/slick-theme.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/selectbox/css/jquery.selectbox.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/please-wait/please-wait.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox8cbb.css?v=2.1.5">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-buttons3447.css?v=1.0.5">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-thumbsf2ad.css?v=1.0.7">
+    <!-- STYLE CSS-->
+    <link type="text/css" rel="stylesheet" href="assets/css/layout.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/components.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/responsive.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/color.css">
+    <!--link(type="text/css", rel='stylesheet', href='assets/css/color-1/color-1.css', id="color-skins")-->
+    <link type="text/css" rel="stylesheet" href="#" id="color-skins">
+    <script src="assets/libs/jquery/jquery-2.2.3.min.js"></script>
+    <script src="assets/libs/js-cookie/js.cookie.js"></script>
+    <script>
+        if ((Cookies.get('color-skin') != undefined) && (Cookies.get('color-skin') != 'color-1')) {
+            $('#color-skins').attr('href', 'assets/css/' + Cookies.get('color-skin') + '/' + 'color.css');
+        }
+        else if ((Cookies.get('color-skin') == undefined) || (Cookies.get('color-skin') == 'color-1')) {
+            $('#color-skins').attr('href', 'assets/css/color-1/color.css');
+        }
+    </script>
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox8cbb.css?v=2.1.5">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-buttons3447.css?v=1.0.5">
+    <link type="text/css" rel="stylesheet" href="assets/libs/fancybox/css/jquery.fancybox-thumbsf2ad.css?v=1.0.7">
+    <link type="text/css" rel="stylesheet" href="assets/libs/mouse-direction-aware/jquery.directional-hover.css">
+    <link type="text/css" rel="stylesheet" href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <!-- MENU MOBILE-->
+        <div class="wrapper-mobile-nav">
+
+            <div class="header-main">
+                <div class="menu-mobile">
+                    <ul class="nav-links nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="index.html" class="main-menu">
+                                <span class="text">Home</span>
+                            </a>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="services.html" class="main-menu">
+                                <span class="text">Services</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="explore.html" class="main-menu">
+                                <span class="text">Explore City</span>
+                            </a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="event.html" class="main-menu">
+                                <span class="text">Event</span>
+                            </a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="contact.html" class="main-menu">
+                                <span class="text">contact Us</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- WRAPPER CONTENT-->
+        <div class="wrapper-content">
+            <!-- HEADER-->
+            <header>
+                <div class="bg-transparent header-01">
+
+                    <div class="header-main">
+                        <div class="container">
+                            <div class="header-main-wrapper">
+                                <div class="hamburger-menu">
+                                    <div class="hamburger-menu-wrapper">
+                                        <div class="icons"></div>
+                                    </div>
+                                </div>
+                                <div class="navbar-header">
+                                    <div class="logo">
+                                        <a href="index.html" class="header-logo">
+                                            <img src="/assets/images/logo/logo-black-color-1.png" style="width: 0%;"
+                                                alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <nav class="navigation">
+                                    <ul class="nav-links nav navbar-nav">
+                                        <li class="dropdown ">
+                                            <a href="index.html" class="main-menu">
+                                                <span class="text icons-dropdown">Home</span>
+                                                <span class="icons-dropdown">
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="services.html" class="main-menu">
+                                                <span class="text icons-dropdown">Services</span>
+                                                <span class="icons-dropdown">
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="explore.html" class="main-menu">
+                                                <span class="text icons-dropdown">Explore City</span>
+                                                <span class="icons-dropdown">
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li class="dropdown">
+                                            <a href="event.html" class="main-menu">
+                                                <span class="text icons-dropdown">Event</span>
+                                                <span class="icons-dropdown">
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="contact.html" class="main-menu">
+                                                <span class="text">Contact Us</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- WRAPPER-->
+            <div id="wrapper-content">
+                <!-- MAIN CONTENT-->
+                <div class="main-content">
+                    <section class="page-banner tour-view" style="background-image: url('assets/images/background/tour-view.jpg');">
+                        <div class="container">
+                            <div class="page-title-wrapper">
+                                <div class="page-title-content">
+                                    <ol class="breadcrumb">
+                                        <li>
+                                            <a href="index.html" class="link home">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="explore.html" class="link">Explore City</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="explore.html" class="link">Explore Vadodara City</a>
+                                        </li>
+                                    </ol>
+                                    <div class="clearfix"></div>
+                                    <h2 class="captions">Explore Vadodara City</h2>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="tour-view-main padding-top padding-bottom">
+                            <div class="container">
+                                
+                                <div class="overview-block clearfix">
+                                    <h3 class="title-style-3">Explore Overview</h3>
+                                    <div class="timeline-container">
+                                        <div class="timeline">
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">Lakshmi Vilas Palace
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">The palace was built by Maharaja Sayajirao Gaekwad III in 1890, who ruled the Baroda State. Major Charles Mant was credited to be the main architect of the palace.Still the residence of Vadodara’s royal family, Laxmi Vilas was built in full-throttle 19th-century Indo-Saracenic flourish at a cost of Rs 6 million. Built over 500 acres, this is the largest private home built till date and four times the size of Buckingham Palace. </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/explor-city/lvp-1.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">Sur Sagar Lake
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">The lake was built in the 18th century and a 120 feet statue of Lord Shiva installed by Vadodara Mahanagar Seva Sadan. Built in the 18th century, the Sursagar is also known as Chand Talao. It marks the center of the city of Vadodara, surrounded by the thrum of commerce in the Old City. A tall statue of Lord Shiva, which is lit up on Maha Shivratri, works as a veritable beacon over the lake.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/explor-city/sur-sagar.jpeg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">AATAPI Wonderland
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">AATAPI Wonderland, Gujarat's Largest Theme Park is spread across 70 acres at Vadodara, park has more than 40 rides & attractions which attracts around 7,000 footfalls per day. hosts a Spectacular Water Laser Show, mesmerizing Jugnoo World, which is also India's 1st Glow Garden, Lost Valley Dinosaur Attraction, India's 1st Tubby Jump, and many more thrilling rides which attract toddlers and grown-ups both.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/explor-city/aatapi.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">BAPS Swaminarayan Temple
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">Bochasanwasi Akshar Purushottam Swaminarayan Sanstha (BAPS) is a Hindu denomination within the Swaminarayan Sampradaya. BAPS mandirs also feature activities to foster culture and youth development. Though construction of the temple began in 2000. The temple was built with: 35,000 individual carved pieces of Carrara Marble and Indian Pink Sandstone, 122 hand-carved pillars.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/explor-city/baps-swaminarayan-temple.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">Baroda Dairy
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">We are a district level milk processing industry established in the year 1957 registered under gujarat state co-operative societies act. Providing Quality of Milk and Milk Products Since 1965. Baroda Dairy Transportation Connecting 1200+ Villages. 73 Total D.C.S. Buildings at Village Level. 231511 Animal like cow and buffalo Treated 2019-20. 144+ Parlours & Milk Bar in the city.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/explor-city/baroda-dairy.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">Vadodara Museum and Picture Gallery
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">Located within Sayaji Bagh is the impressive Vadodara Museum and Picture Gallery, built in 1894 by the Gaekwads. The museum and the picture gallery are two separate two-storied buildings built in the Indo-Saracenic style of architecture. You can see an extensive collection of artefacts relating to archaeology, geology, natural history, a variety of personal collection pieces of Maharaja Sayajirao III.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/explor-city/vadodara-museum-picture-gallery.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">Sev Usal
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">Sev Usal is one of the known cuisines in the western part of India. Specifically, it is special street food in Vadodara, Gujarat which is one of the major city after Ahmedabad in Gujarat state.It is medley of various sweet, spicy and tangy flavours which is made from peas, Indian spices and garnished with seven.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/explor-city/sev-usal.jpg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-block">
+                                                <div class="timeline-content medium-margin-top">
+                                                    <div class="row">
+                                                        <div class="timeline-point">
+                                                            <i class="fa fa-circle-o"></i>
+                                                        </div>
+                                                        <div class="timeline-custom-col content-col">
+                                                            <div class="timeline-location-block">
+                                                                <p class="location-name">M.S University
+                                                                    <i class="fa fa-map-marker icon-marker"></i>
+                                                                </p>
+                                                                <p class="description">The Faculty of Arts dome at M S University, which was designed by British architect R F Chisholm in 1880s, has the distinction of being Asia’s second largest masonry dome. The Indo-Saracenic style architecture of this 144 feet high dome is said to have inspired the architecture of Prince of Wales Museum in Mumbai which was completed by George Wittet in 1914.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="timeline-custom-col image-col">
+                                                            <div class="timeline-image-block">
+                                                                <img src="assets/images/msu.jpeg"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="wrapper-btn margin-top70">
+                                <a href="#" class="btn btn-maincolor btn-book-tour">book now</a>
+                            </div> -->
+                            <div class="timeline-book-block book-tour">
+                                <div class="find-widget find-hotel-widget widget new-style">
+                                    <h4 class="title-widgets">BOOK ROOM</h4>
+                                    <form class="content-widget">
+                                        <div class="text-input small-margin-top">
+                                            <div class="input-daterange">
+                                                <div class="text-box-wrapper half">
+                                                    <label class="tb-label">Check in</label>
+                                                    <div class="input-group">
+                                                        <input type="text" placeholder="MM/DD/YY" class="tb-input">
+                                                        <i class="tb-icon fa fa-calendar input-group-addon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="text-box-wrapper half">
+                                                    <label class="tb-label">Check out</label>
+                                                    <div class="input-group">
+                                                        <input type="text" placeholder="MM/DD/YY" class="tb-input">
+                                                        <i class="tb-icon fa fa-calendar input-group-addon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="count adult-count text-box-wrapper">
+                                                <label class="tb-label">Adult</label>
+                                                <div class="select-wrapper">
+                                                    <!--i.fa.fa-chevron-down-->
+                                                    <select class="form-control custom-select selectbox">
+                                                        <option selected="selected">1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="count child-count text-box-wrapper">
+                                                <label class="tb-label">Child</label>
+                                                <div class="select-wrapper">
+                                                    <!--i.fa.fa-chevron-down-->
+                                                    <select class="form-control custom-select selectbox">
+                                                        <option selected="selected">0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="first-name text-box-wrapper">
+                                                <label class="tb-label">Your First Name</label>
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Write your first name"
+                                                        class="tb-input">
+                                                </div>
+                                            </div>
+                                            <div class="last-name text-box-wrapper">
+                                                <label class="tb-label">Your Last Name</label>
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Write your last name"
+                                                        class="tb-input">
+                                                </div>
+                                            </div>
+                                            <div class="email text-box-wrapper">
+                                                <label class="tb-label">Your Email</label>
+                                                <div class="input-group">
+                                                    <input type="email" placeholder="Write your email address"
+                                                        class="tb-input">
+                                                </div>
+                                            </div>
+                                            <div class="phone text-box-wrapper">
+                                                <label class="tb-label">Your Number Phone</label>
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Write your number phone"
+                                                        class="tb-input">
+                                                </div>
+                                            </div>
+                                            <div class="place text-box-wrapper">
+                                                <label class="tb-label">Where are your address?</label>
+                                                <div class="input-group">
+                                                    <input type="text" placeholder="Write your address"
+                                                        class="tb-input">
+                                                </div>
+                                            </div>
+                                            <div class="note text-box-wrapper">
+                                                <label class="tb-label">Note:</label>
+                                                <div class="input-group">
+                                                    <textarea placeholder="Write your note" rows="3" name="content"
+                                                        class="tb-input"></textarea>
+                                                </div>
+                                            </div>
+                                            <button type="submit" data-hover="SEND REQUEST" class="btn btn-slide">
+                                                <span class="text">BOOK Now</span>
+                                                <span class="icons fa fa-long-arrow-right"></span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-block margin-top70">
+                            <div class="container">
+                                <h3 class="title-style-2">Gallery</h3>
+                                <div class="grid">
+                                    <div class="grid-sizer"></div>
+                                    <div class="gutter-sizer"></div>
+                                    <div class="grid-item grid-item--big">
+                                        <div class="gallery-image">
+                                            <a href="assets/images/tour-view/grid-images/lvp.jpg"
+                                                data-fancybox-group="gallery" class="title-hover dh-overlay fancybox">
+                                                <i class="icons fa fa-eye"></i>
+                                            </a>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item grid-item--medium">
+                                        <div class="gallery-image">
+                                            <a href="assets/images/tour-view/grid-images/kite.jpeg"
+                                                data-fancybox-group="gallery" class="title-hover dh-overlay fancybox">
+                                                <i class="icons fa fa-eye"></i>
+                                            </a>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item img-small pdr">
+                                        <div class="gallery-image">
+                                            <a href="assets/images/tour-view/grid-images/circle.jpeg"
+                                                data-fancybox-group="gallery" class="title-hover dh-overlay fancybox">
+                                                <i class="icons fa fa-eye"></i>
+                                            </a>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item img-small pdl">
+                                        <div class="gallery-image">
+                                            <a href="assets/images/tour-view/grid-images/lake.jpg"
+                                                data-fancybox-group="gallery" class="title-hover dh-overlay fancybox">
+                                                <i class="icons fa fa-eye"></i>
+                                            </a>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item grid-item--width2">
+                                        <div class="gallery-image">
+                                            <a href="assets/images/tour-view/grid-images/kamatibag.jpeg"
+                                                data-fancybox-group="gallery" class="title-hover dh-overlay fancybox">
+                                                <i class="icons fa fa-eye"></i>
+                                            </a>
+                                            <div class="bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                </section>
+            </div>
+            <!-- BUTTON BACK TO TOP-->
+            <div id="back-top">
+                <a href="#top" class="link">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            </div>
+        </div>
+        <!-- FOOTER-->
+        <footer>
+            <div class="footer-main padding-top padding-bottom">
+                <div class="container">
+                    <div class="footer-main-wrapper">
+                        <a href="index.html" class="logo-footer">
+                            <img src="assets/images/vmc-logo-1.jpg"  alt="" class="img-responsive" style="width: 140px; height: 180px;"/>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="hyperlink">
+                <div class="container">
+
+                    <div class="social-footer" style="padding-top: 20px;">
+                        <ul class="list-inline list-unstyled">
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCK8SdKevqkQykxeHBCieSCQ" target="_blank" class="link youtube" style="font-size: 30px; color: azure;">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/VADODARAMUNICIPALCORPORATION/" target="_blank" class="link facebook" style="font-size: 30px; color: azure;">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/VMCVadodara" class="link twitter" target="_blank" style="font-size: 30px; color: azure;">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/vmcvadodara/" target="_blank" class="link instagram" style="font-size: 25px; color: azure;">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="name-company" style="font-size: 18px; color: azure;"> Designed by <a
+                            >The Weber's</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+    <!-- LIBRARY JS-->
+    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/libs/detect-browser/browser.js"></script>
+    <script src="assets/libs/smooth-scroll/jquery-smoothscroll.js"></script>
+    <script src="assets/libs/wow-js/wow.min.js"></script>
+    <script src="assets/libs/slick-slider/slick.min.js"></script>
+    <script src="assets/libs/selectbox/js/jquery.selectbox-0.2.js"></script>
+    <script src="assets/libs/please-wait/please-wait.min.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox-buttons.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox-thumbs.js"></script>
+    <!--script(src="assets/libs/parallax/jquery.data-parallax.min.js")-->
+    <!-- MAIN JS-->
+    <script src="assets/js/main.js"></script>
+    <!-- LOADING JS FOR PAGE-->
+    <script src="assets/js/pages/tour-view.js"></script>
+    <script src="assets/libs/isotope/isotope.min.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox-buttons.js"></script>
+    <script src="assets/libs/fancybox/js/jquery.fancybox-thumbs.js"></script>
+    <script src="assets/libs/mouse-direction-aware/jquery.directional-hover.js"></script>
+    <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        var logo_str = 'assets/images/vmc-logo-1.jpg';
+        if (Cookies.set('color-skin')) {
+            logo_str = 'assets/images/logo/logo-black-' + Cookies.set('color-skin') + '.png';
+        }
+        window.loading_screen = window.pleaseWait(
+            {
+                logo: logo_str,
+                backgroundColor: '#fff',
+                loadingHtml: "<div class='spinner sk-spinner-wave'><div class='rect1'></div><div class='rect2'></div><div class='rect3'></div><div class='rect4'></div><div class='rect5'></div></div>",
+            });
+    </script>
+</body>
+
+<!-- Mirrored from swlabs.co/exploore/tour-view.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Dec 2020 06:08:10 GMT -->
+
+</html>
